@@ -13,12 +13,5 @@ module.exports = {
     "react/forbid-prop-types": 0,
     "react/no-unescaped-entities": 0,
     "linebreak-style": 0,
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      {
-        allowExpressions: true,
-      },
-    ],
   },
 };

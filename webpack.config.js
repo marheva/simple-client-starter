@@ -13,16 +13,20 @@ module.exports = {
   devServer: {
     hot: true,
     historyApiFallback: true,
-    inline: true,
     port: 3000,
   },
   module: {
     rules: [
       {
+        test: /\.(js|jsx|ts|tsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+        options: { presets: ["@babel/env"] },
+      },
+      {
         test: /\.(js|jsx)$/,
         use: "babel-loader",
       },
-      { test: /\.tsx?$/, loader: "ts-loader" },
       {
         test: /\.(sass|css)$/i,
         use: ["style-loader", "css-loader"],
