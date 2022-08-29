@@ -1,4 +1,4 @@
-# client-starter
+# simple-client-starter
 
 ### pure starter:
 - no redux
